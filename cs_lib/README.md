@@ -1,18 +1,18 @@
-# Compare String versions
+# Compare strings
+
 * A python library for comparing 2 strings
 
-> in case str1 = str2 `1 `
-> in case str1 > str2 `0`
-> in case str2 < str2 `-1`
+- in the case of str1 = str2 returned value would be `1 `
+- in the case of str1 > str2 returned value would be `0`
+- in the case of str1 < str2 returned value would be `-1`
 
-#### Installation
+#### Installation:
 
 > `pip3 install compare_strings_lib`
 
-#### Usage
+#### Usage:
 ```
-from strings_lib.compare import compare
+from strings.compare import compare
 
-    compare_strings = compare("1.2", "1.1")
-
+    result = compare("1.2", "1.1")
 ```

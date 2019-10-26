@@ -11,7 +11,7 @@ setuptools.setup(
     description="module for comparing to strings",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/qalfaki/compare_strings",
+    url="https://github.com/qalfaki/py-lib/cs_lib",
     packages=["strings"],
     classifiers=[
         "Programming Language :: Python :: 3",
