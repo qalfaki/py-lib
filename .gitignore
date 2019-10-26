@@ -66,3 +66,6 @@ target/
 # vim
 .swo
 .swp
+
+# vritual environemt
+venv/
