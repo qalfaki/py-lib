@@ -1,5 +1,5 @@
 import unittest
-from ..x_axis.overlap import overlapping
+from ..overlap import overlapping
 
 class TestXAxisOverlapping(unittest.TestCase):
 
@@ -7,7 +7,7 @@ class TestXAxisOverlapping(unittest.TestCase):
         self.assertTrue(overlapping({1, 4}, {2, 10}))
         self.assertTrue(overlapping({3, 4}, {1, 10}))
         self.assertTrue(overlapping({12, 4}, {10, 3}))
-        self.assertTrue(overlapping({0, 0}, {0, 0}))
+        self.assertTrue(overlapping({8, 19}, {4, 20}))
 
     def test_not_overlapping(self):
         self.assertFalse(overlapping({1, 4}, {5, 10}))
@@ -17,4 +17,4 @@ class TestXAxisOverlapping(unittest.TestCase):
 
 
 if __name__== "__maine__":
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=1)

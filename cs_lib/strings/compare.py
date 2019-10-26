@@ -1,4 +1,4 @@
-from custom_exceptions.invalid_values import InvalidValues
+from .custom_exceptions import InvalidValues
 
 def compare(str1, str2):
     """compare strings.
@@ -6,21 +6,21 @@ def compare(str1, str2):
     params:
     str1 -- string version 1
     str2 -- string version 2
-    the strings are a dot seperated integers.
+    the strings are a dot seperated floategers.
 
     return:
     1 if str1 = str2
     0 if str1 > str1
     -1 if str1 < str2
 
-    raise invalidValues exception if non integer value provided
+    raise invalidValues exception if non floateger value provided
     """
     try:
-        str_v1 = int(''.join(str1.split('.')))
-        str_v2 = int(''.join(str2.split('.')))
+        str_v1 = float(''.join(str1.split('.')).replace(' ', ''))
+        str_v2 = float(''.join(str2.split('.')).replace(' ', ''))
         if str_v2 == str_v1 and len(str1) == len(str2):
             return 1
-        elif str_v1 > str_v2 or len(str_v1) > str(srt_v2):
+        elif str_v1 > str_v2 or len(str1) > len(str2):
             return 0
         else:
             return -1

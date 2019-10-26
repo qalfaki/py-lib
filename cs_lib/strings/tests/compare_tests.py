@@ -1,7 +1,7 @@
 import unittest
 
-from ..strings_lib import compare
-from ..strings_lib.custom_exceptions import InvalidValues
+from ..compare import compare
+from ..custom_exceptions import InvalidValues
 
 class TestCompareFunction(unittest.TestCase):
 
@@ -57,10 +57,10 @@ class TestCompareFunction(unittest.TestCase):
 
 
     def test_compare_invalid_params(self):
-        for args in [["1.2.3", []], [{},{}], [], [None, map]]:
+        for args in [["1.2.3", []], [{},{}], [[], []], [None, map]]:
             with self.assertRaises(InvalidValues):
                 compare(*args)
 
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=1)
