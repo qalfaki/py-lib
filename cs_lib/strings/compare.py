@@ -1,7 +1,8 @@
 from .custom_exceptions import InvalidValues
 
+
 def compare(str1, str2):
-    """compare strings.
+    '''compare strings.
 
     params:
     str1 -- string version 1
@@ -14,7 +15,7 @@ def compare(str1, str2):
     -1 if str1 < str2
 
     raise invalidValues exception if non integers value provided
-    """
+    '''
     try:
         str_v1 = float(''.join(str1.split('.')).replace(' ', ''))
         str_v2 = float(''.join(str2.split('.')).replace(' ', ''))
@@ -25,4 +26,5 @@ def compare(str1, str2):
         else:
             return -1
     except Exception:
-        raise InvalidValues(f'invalid params. can not compare {str1} to {str2}')
+        raise InvalidValues(
+            f'invalid params. can not compare {str1} to {str2}')
