@@ -67,5 +67,5 @@ target/
 .swo
 .swp
 
-# vritual environemt
+# virtual environemt
 venv/

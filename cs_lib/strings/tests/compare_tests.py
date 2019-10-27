@@ -1,7 +1,9 @@
 import unittest
 
-from ..compare import compare
-from ..custom_exceptions import InvalidValues
+from ..compare import (
+    compare,
+    InvalidValues
+)
 
 
 class TestCompareFunction(unittest.TestCase):

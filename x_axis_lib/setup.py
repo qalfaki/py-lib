@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="x_axis_lib",
-    version="0.0.1",
+    version="0.0.2",
     author="qalfaki",
     author_email="qusai.alfaki@gmail.com",
     description="module for testing weheather 2 x axis are overlapping",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/qalfaki/py-lib/x_axis_lib",
+    url="https://github.com/qalfaki/py-lib/tree/master/x_axis_lib",
     packages=["x_axis"],
     classifiers=[
         "Programming Language :: Python :: 3",

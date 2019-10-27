@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="compare_strings_lib",
-    version="0.0.1",
+    version="0.0.2",
     author="qalfaki",
     author_email="qusai.alfaki@gmail.com",
     description="module for comparing to strings",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/qalfaki/py-lib/cs_lib",
+    url="https://github.com/qalfaki/py-lib/tree/master/cs_lib",
     packages=["strings"],
     classifiers=[
         "Programming Language :: Python :: 3",

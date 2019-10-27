@@ -1,6 +1,8 @@
 import unittest
-from ..overlap import overlapping
-from ..custom_exceptions import InvalidValues
+from ..overlap import (
+    overlapping,
+    InvalidValues,
+)
 
 
 class TestXAxisOverlapping(unittest.TestCase):

@@ -1,4 +1,5 @@
-from .custom_exceptions import InvalidValues
+class InvalidValues(Exception):
+        pass
 
 
 def overlapping(line1, line2):
